@@ -19,7 +19,7 @@ public class CarrinhoDeCompras {
         List<Item> removerItens = new ArrayList<>();
 
       for (Item i: itensList ) {
-          if(i.getNome().equals(nome)){
+          if(i.getNome().equalsIgnoreCase(nome)){
               removerItens.add(i);
           }
       }
@@ -50,14 +50,14 @@ public class CarrinhoDeCompras {
     public static void main(String[] args) {
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
-//        carrinho.adicionarItem("livro", 3, 35d);
-//        carrinho.adicionarItem("radio", 1, 335d);
-//        carrinho.adicionarItem("pilhas", 4, 10d);
-//        carrinho.adicionarItem("cabo de energia", 1, 20d);
+        carrinho.adicionarItem("livro", 3, 35d);
+        carrinho.adicionarItem("radio", 1, 335d);
+        carrinho.adicionarItem("pilhas", 4, 10d);
+        carrinho.adicionarItem("cabo de energia", 1, 20d);
 
-//        carrinho.calcularValorTotal();
+        carrinho.calcularValorTotal();
 
-//        System.out.println("O valor total: " + carrinho.calcularValorTotal());
+        System.out.println("O valor total: " + carrinho.calcularValorTotal());
 
         carrinho.removerItem("livro");
 
