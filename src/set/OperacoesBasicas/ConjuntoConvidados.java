@@ -1,4 +1,4 @@
-package set;
+package set.OperacoesBasicas;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -38,15 +38,15 @@ public class ConjuntoConvidados {
         ConjuntoConvidados convidados = new ConjuntoConvidados();
 
         convidados.adicionarConvidado("Carlos", 1234);
-        convidados.adicionarConvidado("Zarlos", 4565);
-        convidados.adicionarConvidado("Marlos", 7568);
-        convidados.adicionarConvidado("Darlos", 1298);
+        convidados.adicionarConvidado("Zarlos", 1235);
+        convidados.adicionarConvidado("Marlos", 1235);
+        convidados.adicionarConvidado("Darlos", 1236);
 
         convidados.exibirConvidados();
         convidados.contarConvidados();
 
-        convidados.removerConvidadoPorCodigoConvite(4565);
-        convidados.contarConvidados();
-        convidados.exibirConvidados();
+//        convidados.removerConvidadoPorCodigoConvite(4565);
+//        convidados.contarConvidados();
+//        convidados.exibirConvidados();
     }
 }
